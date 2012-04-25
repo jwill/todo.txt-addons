@@ -1,0 +1,22 @@
+#!/bin/bash
+
+action=$1
+flag=$2
+project=$3
+shift
+
+[ "$action" = "usage" ] && {
+  echo "  Recently comlpeted tasks:"
+  echo "    lately+"
+  echo "      generates a list of completed tasks during the last 7 days."
+  echo "      Optional argument (integer) overrides number of days."
+	echo "      Optional argument (String) project name."
+  echo ""
+  exit
+}
+
+[ "$action" = "lately+" ] && {
+     #groovy ~/.todo.actions.d/lately+.groovy "$TODO_DIR" $flag $project
+     #groovyclient ~/.todo.actions.d/lately+.groovy "$TODO_DIR" $flag $project
+		 coffee ~/.todo.actions.d/lately+.coffee "$TODO_DIR" $flag $project
+}
