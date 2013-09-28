@@ -9,6 +9,10 @@ Drop the shell script and .coffee file for the desired addon into your .todo.act
 
 ## Addons
 lately+		Extends the lately addon to allow a configurable no of days to list
-mpri		Prioritize multiple items at the same time
+mpri		  Prioritize multiple items at the same time
 dempri		De-prioritize multiple items at the same time
-drive		Push and pull todo.txt files to Google Drive. (Not tested)
+drive		  Push and pull todo.txt files to Google Drive. (Not tested)
+
+
+## Dependencies
+lately+:  npm install -g moment colors todotxt-coffee
