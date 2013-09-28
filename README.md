@@ -15,6 +15,6 @@ Drop the shell script and .coffee file for the desired addon into your .todo.act
 
 
 ## Dependencies
-lately+:  npm install -g moment colors todotxt-coffee
-mpri:     npm install -g todotxt-coffee
-dempri:   npm install -g todotxt-coffee
+- lately+:  npm install -g moment colors todotxt-coffee
+- mpri:     npm install -g todotxt-coffee
+- dempri:   npm install -g todotxt-coffee
