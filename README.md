@@ -8,7 +8,13 @@ Addons for the CLI version of todo.txt.
 Drop the shell script and .coffee file for the desired addon into your .todo.actions.d folder of your CLI install.
 
 ## Addons
-lately+		Extends the lately addon to allow a configurable no of days to list
-mpri		Prioritize multiple items at the same time
-dempri		De-prioritize multiple items at the same time
-drive		Push and pull todo.txt files to Google Drive. (Not tested)
+- lately+		Extends the lately addon to allow a configurable no of days to list
+- mpri		  Prioritize multiple items at the same time
+- dempri		De-prioritize multiple items at the same time
+- drive		  Push and pull todo.txt files to Google Drive. (Not tested)
+
+
+## Dependencies
+- lately+:  npm install -g moment colors todotxt-coffee
+- mpri:     npm install -g todotxt-coffee
+- dempri:   npm install -g todotxt-coffee
