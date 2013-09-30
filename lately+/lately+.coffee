@@ -1,7 +1,7 @@
 path = require 'path'
 moment = require 'moment'
 colors = require 'colors'
-{TodoList} = require 'todotxt-coffee'
+{TodoList} = require 'todotxt-coffee/lib/TodoList'
 
 dir = process.argv[2]
 if (process.argv.length > 3)
@@ -32,6 +32,7 @@ printTasks = () ->
 	
 			printTask(date, restOfLine)	if startDate <= date
 	else
+      project = '+'+project if project.substring(0,1) != '+'
 			tasks = todos.byProject(project)
 			for t in tasks
 				date = moment(t.date().toString().trim())
