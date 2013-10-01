@@ -1,7 +1,7 @@
 util = require 'util'
 exec = require('child_process').exec
 puts = (error, stdout, stderr) ->
-	util.puts stdout
+  util.puts stdout
 
 paramsSize = process.argv.length
 
