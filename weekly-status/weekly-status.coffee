@@ -65,12 +65,12 @@ stream.once('open', (fd) ->
     
     stream.write('Last Week:\n\n')
     for p in parsedDoneTasks
-        stream.write(p.text()+'\n')
+        stream.write(p.text().replace(mit_date_regex2, '')+'\n')
 
     stream.write('\nNext Week:\n\n')
     for f in parsedFutureTasks
         stream.write(f.raw().replace(mit_date_regex2, '').replace(work_context_regex, '').trim()+'\n')
 
     stream.end()
-    console.log("Write file to weekly-update-email.txt")
+    console.log("Wrote file to weekly-update-email.txt")
 )
